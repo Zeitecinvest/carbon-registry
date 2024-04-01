@@ -21,7 +21,7 @@ import { GHGProjectionController } from './ghg,projection.controller';
     ConfigModule.forRoot({
       isGlobal: true,
       load: [configuration.default],
-      envFilePath: [`.env.${process.env.NODE_ENV}`, `.env`]
+      envFilePath: [`.env`]
     }),
     TypeOrmModule.forRootAsync({
       useClass: TypeOrmConfigService,
